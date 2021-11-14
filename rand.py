@@ -1,6 +1,12 @@
 import random
+# 讓使用者決定範圍
+end = input('請決定猜的範圍結束值：')
+start = input('請決定猜的範圍開始值：')
+start = int(start)
+end = int(end)
 
-r = random.randint(1,100)
+r = random.randint(start,end)
+
 i = 0 # 猜幾次
 while True:
 	num = input('請輸入一個數字： ')
